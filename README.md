@@ -47,3 +47,11 @@ This repository contains a syncing bot, which is part of an assignment by the Kl
 6. The bot can be run with any RPC URL, but for this example, I am using the Sepolia RPC URL. Any private key is allowed to call the Pong function, as no permission checks are in place.
 
 7. Ensure you have enough Sepolia Ether in your wallet to call the Pong function.
+
+### Note for Local Testing
+
+There is an additional `Ping_Pong` contract available for those who want to deploy and test the bot locally. This contract is not part of the assignment but can be used for testing purposes. If you want to try the bot with your own deployed contract, you can deploy the `Ping_Pong` contract and interact with it using the `PingPongCallingBot`.
+
+Keep in mind that the Ping event in this contract checks for permission, so be sure to review the contract's permission rules before testing.
+
+This allows you to experiment with the bot and test the syncing mechanism locally before integrating it with the pre-deployed contract for the assignment.
